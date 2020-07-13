@@ -1,0 +1,8 @@
+{
+    "name": "STONK-BOI",
+    "version": "1.0.0",
+    "description": "ILIKE---STONKS",
+    "main": "bot.go",
+    "author": "Nabiel Kandiel",
+    "dependencies": {}
+}
