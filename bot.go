@@ -58,7 +58,8 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if m.Author.ID == s.State.User.ID {
 		return
 	}
-	if strings.Contains(strings.ToLower(m.Content), "stocks") {
+	msg := strings.ToLower(m.Content)
+	if strings.Contains(msg, "stock") || strings.Contains(msg, "stonk") {
 		data, err := os.Open("STONKS.jpg")
 		if err != nil {
 			fmt.Println("Error reading file: ", err.Error())
